@@ -20,6 +20,7 @@ group :test do
 	gem 'factory_girl'
 	gem 'capybara'
   gem 'database_cleaner'
+  gem 'shoulda'
 end
 
 group :development do
