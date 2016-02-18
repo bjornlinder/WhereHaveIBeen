@@ -13,6 +13,26 @@
 
 var targets = [
 
+  { 'category': 'New (mostly) cached content' },
+
+  { 'name': 'custom-facebook', 'urls': [ 'http://staticxx.facebook.com/connect/xd_arbiter.php?version=42' ] },
+  { 'name': 'google analytics', 'urls': [ 'https://www.google-analytics.com/analytics.js',
+                                          'http://www.google-analytics.com/plugins/ua/linkid.js' ] },
+
+  { 'name': 'common icons', 'urls': [ 'https://a.gfx.ms/hig/img/controls.png',
+                                      'http://www.google-analytics.com/plugins/ua/linkid.js' ] },
+
+  { 'name': 'hotmail', 'urls': [ 'https://col128.mail.live.com/ol/clear.gif',
+                                 'http://www.hotmail.com/' ] },
+
+  { 'name': 'not a real link', 'urls': [ 'https://www.aslibjl.com' ] },
+
+  { 'name': 'lcamtuf favicon', 'urls': [ 'http://lcamtuf.coredump.cx/favicon.ico' ] },
+
+  { 'name': 'rubyonrails.org', 'urls': [ 'http://guides.rubyonrails.org/images/favicon.ico',
+                                         'http://guides.rubyonrails.org/javascripts/syntaxhighlighter/shBrushXml.js',
+                                         'http://guides.rubyonrails.org/javascripts/guides.js'  ] },
+
   { 'category': 'Social networks' },
 
   { 'name': 'Facebook', 'urls': [ 'https://s-static.ak.facebook.com/rsrc.php/v1/yX/r/HN0ehA1zox_.js',

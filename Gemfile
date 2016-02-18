@@ -9,9 +9,17 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 
+gem 'devise'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
+end
+
+group :test do
+	gem 'factory_girl'
+	gem 'capybara'
+  gem 'database_cleaner'
 end
 
 group :development do
