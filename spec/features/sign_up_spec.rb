@@ -11,7 +11,6 @@ feature 'user signs up' do
     click_on "Sign up"
 
     expect(page).to have_content("Welcome! You have signed up successfully.")
-    expect(page).to have_content("Sign out")
   end
 
   scenario 'requested information is not specified' do

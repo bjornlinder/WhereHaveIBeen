@@ -1,0 +1,13 @@
+<h1>Apps - Visited & Unvisited</h1>
+
+<% @visited_apps.each do |app| %>
+  <li class='visited'><%= app.name.titleize %></li>
+<% end %>
+
+<% @unvisited_apps.each do |app| %>
+  <li><%= app.name.titleize %></li>
+<% end %>
+
+<hr>
+
+<%= link_to 'Back', root_path %>

@@ -18,7 +18,9 @@ apps = [
   { 'name': 'gmail', 'url': 'https://mail.google.com/mail/u/0/images/cleardot.gif' },
   { 'name': 'multiple gmail accounts', 'url': 'https://mail.google.com/mail/u/1/images/cleardot.gif' },
   { 'name': 'slack', 'url': 'https://slack.global.ssl.fastly.net/0180/img/icons/app-256.png' },
-  { 'name': 'bob', 'urls': [ 'http://bob.com/images/topline-logo.jpg' ] }
+  { 'name': 'bob', 'url': 'http://bob.com/images/topline-logo.jpg' },
+  { 'name': 'hackernews', 'url': 'https://news.ycombinator.com/y18.gif' },
+  { 'name': 'pandora', 'url': 'http://www.pandora.com/img/pandora-logo-splash-538x110.png' }
 ]
 
 apps.each do |app|
