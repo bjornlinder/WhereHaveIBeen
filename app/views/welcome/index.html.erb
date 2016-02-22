@@ -7,3 +7,9 @@ Welcome! <br><br>
 
 <%= render "devise/shared/links" %>
 
+<script>
+  if (navigator.userAgent.indexOf('Chrome/') == -1 && navigator.userAgent.indexOf('Opera/') == -1) {
+    alert('This application is specific to Chrome and Opera, and probably won\'t work for you.\n\n' +
+    'See the original project for versions for other browsers:\n' + 'http://lcamtuf.coredump.cx/cachetime/');
+  }
+</script>
