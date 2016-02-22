@@ -21,6 +21,6 @@ class AppsController < ApplicationController
       current_user.update(checked_apps: true)
     end
 
-    redirect_to 'apps#index'
+    redirect_to action: "index"
   end
 end

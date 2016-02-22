@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 describe AppsController do
-
   describe '#index' do
     let(:user) { create(:user) }
 
