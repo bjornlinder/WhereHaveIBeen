@@ -1,6 +1,6 @@
 class AppsController < ApplicationController
   def index
-    redirect_to root_path && return if !current_user
+    redirect_to root_path and return if !current_user
 
     if current_user.checked_apps
       @visited_apps = current_user.apps
