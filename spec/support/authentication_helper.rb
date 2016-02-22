@@ -1,5 +1,4 @@
 module AuthenticationHelper
-
   def sign_in_as(user)
     visit root_path
     click_link 'Log in'
@@ -7,5 +6,4 @@ module AuthenticationHelper
     fill_in 'Password', with: user.password
     click_on 'Log in'
   end
-
 end

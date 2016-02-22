@@ -1,14 +1,10 @@
-if (navigator.userAgent.indexOf('Chrome/') == -1 && navigator.userAgent.indexOf('Opera/') == -1) {
-  alert('This application is specific to Chrome and Opera, and probably won\'t work for you.\n\n' +
-    'See the original project for versions for other browsers:\n' + 'http://lcamtuf.coredump.cx/cachetime/');
-}
-
 visitedApps = [];
 var finished = 0;
 var start = new Date().getTime();
 
 var endCB = function () {
   console.log('tested' + apps.length + 'urls in ' + (new Date().getTime() - start) + ' milliseconds');
+  debugger;
   $.ajax({
     type: 'post',
     url: '/user-apps-callback',
@@ -45,18 +41,24 @@ function test_app_url(app, callbackAddApp) {
 
   function checkImage(img, app, stopImageChecker) {
     if (img.complete) {
+      console.log('complete. url: ' + img.src);
+      console.log('#checks: ');
+      console.log(checks);
       stopImageChecker();
       callbackAddApp(app);
       if (finished == apps.length) {
         endCB();
       }
-    } else if (checks > 10) {
+    } else if (checks > 18) {
+      console.log('fail. url: ' + img.src);
       stopImageChecker();
       if (finished == apps.length) {
         endCB();
       }
     } else {
+      console.log('tick. url: ' + img.src + '. check #:');
       checks ++;
+      console.log(checks);
     }
   }
 }
