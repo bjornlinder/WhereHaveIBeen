@@ -1,28 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an experiment in browser history extraction using cache timing technology, made according to specifications for a coding challenge. Using this method I can check which websites (and some individual pages) you have visited recently with your browser, using a pre-configured list of web assets. This is a browser exploit, and one which likely will not be going away anytime soon. This particular algorithm is meant to work only on webkit-based browsers (Chrome, Safari); the pages linked below have some versions available for Firefox.
 
-Things you may want to cover:
+This application is available live at https://checkingyourbrowserhistory.herokuapp.com/. To test it out, I recommend opening an incognito window, visiting https://news.ycombinator.com/ and https://github.com/, then signing up for an account at the url given above (or localhost). You should see those applications highlighted in green, likely along with a 'fake application'. The rest of the applications should appear below those.
 
-* Ruby version
+The original scripts are available at http://lcamtuf.coredump.cx/cachetime/ and http://oxplot.github.io/visipisi/visipisi.html. The Visipisi algorithm relies on loading assets as images and is far more efficient than the lcamtuf algorithm, which uses iFrames. The algorithm seems to work sometimes, but its reliability is most questionable. I refactored the visipisi algorithm to use the setInterval function; I believe this is more readable than the original algorithm and (hopefully) just as accurate in determining if you have visited a site.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Cache timing algorithm: https://github.com/bjornlinder/WhereHaveIBeen/blob/master/app/assets/javascripts/history-extraction.js
